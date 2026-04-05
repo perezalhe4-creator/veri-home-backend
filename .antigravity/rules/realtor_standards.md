@@ -1,0 +1,1 @@
+Every Pydantic model that represents a property or a compliance check MUST include a field named realtor_license_id. This field must be a string and must have a validation constraint requiring it to be exactly 8 characters long.
