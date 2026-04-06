@@ -1,15 +1,11 @@
-import sys
-import os
+
 from datetime import datetime, timezone
 from fastapi import APIRouter
 from pydantic import BaseModel, HttpUrl, Field
 
-# Add the .antigravity/skills folder to Python path to import compliance_tools
-skills_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../.antigravity/skills"))
-if skills_path not in sys.path:
-    sys.path.append(skills_path)
 
-import compliance_tools
+
+from antigravity.skills import compliance_tools
 
 router = APIRouter()
 
